@@ -1,10 +1,18 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
-export const Signup = () => {
+export const Signup = ({setlogin,login}) => {
+
+
+        function signuphandler(evt)
+        {
+                evt.preventDefault();
+                setlogin(!login);
+                
+        }
   return (
 
-    <form  className='flex flex-col justify-center items-center gap-y-4 mt-24'>
+    <form  className='flex flex-col justify-center items-center gap-y-4 mt-24' onSubmit={signuphandler}>
     <label className='w-300px'>
           <p className='text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem]'>Email Addresse
           <sup className='text-pink-200'>*</sup></p>
