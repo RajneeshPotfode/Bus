@@ -8,6 +8,7 @@ import { Compalain } from './assets/com/Compalain'
 import { Login } from './assets/com/Login'
 import { Notification } from './assets/com/Notification'
 import { Signup } from './assets/com/Signup'
+import { Home } from './assets/com/Home'
 
 function App() {
 
@@ -15,16 +16,23 @@ function App() {
   
 
   return (
-    <div id='Ap' className=' bg-richblack-800 w-screen h-screen  flex flex-col'>
+    <div id='Ap' className=' bg-white h-2000px w-screen  '>
 
 <>
-     <Nav setlogin={setlogin} login={login}></Nav>
+
+
+{ login &&
+  <Nav setlogin={setlogin} login={login}></Nav>
+
+}
+
+     
 
   
 
      <Routes>
        
-        <Route path='/home' element={<h1>home</h1>} ></Route>
+        <Route  path='/home' element={<Home/>} ></Route>
         <Route path="/Buses" element={<Buses></Buses>} ></Route>
         <Route path="/notification" element={<Notification></Notification>} ></Route>
         <Route path="/complain" element={<Compalain></Compalain>} ></Route>

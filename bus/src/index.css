@@ -1,3 +1,184 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    overflow-x: hidden;
+    
+}
+
+#navv{
+    box-shadow: 2px 2px  12px black;
+}
+#box{
+    box-shadow: 3px 3px 20px  green;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-duration: 5s;
+
+}
+@keyframes move {
+    0%{
+        margin-top: 0%;
+    }
+    50%{
+        margin-top: -90px;
+        box-shadow: 3px 3px 10px red;
+
+    }
+    100%{
+        margin-top: 0%;
+    }
+
+}
+
+
+#box2{
+    box-shadow: 3px 3px 20px green;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-duration: 5s;
+
+}
+@keyframes move {
+    0%{
+        margin-top: 0%;
+    }
+    50%{
+        margin-top: 90px;
+        box-shadow: 3px 3px 20px red;
+
+    }
+    100%{
+        margin-top: 0%;
+    }
+
+}
+
+#box3{
+
+    box-shadow: 3px 3px 10px black;
+
+}
+
+/* #report{
+    animation-name: report;
+    margin-top: 40px;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-duration: 2s;
+
+}
+@keyframes report {
+    0%{
+        margin-top: 0%;
+    }
+    50%{
+        transform: scale(1.2);
+       
+
+    }
+    100%{
+        margin-top: 0%;
+    }
+
+} */
+
+
+#man1{
+    height: 30%;
+    width: 30%;
+    animation-name: man1;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-duration: 5s;
+    
+}
+
+@keyframes man1 {
+    0%{
+        margin-top: 0%;
+    }
+    50%{
+        margin-top: 50px;
+       
+
+    }
+    100%{
+        margin-top: 0%;
+    }
+
+}
+
+
+#man2{
+    height: 30%;
+    width: 30%;
+    animation-name: man2;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-duration: 5s;
+}
+@keyframes man2 {
+    0%{
+        margin-top: 0%;
+    }
+    50%{
+        margin-top: -50px;
+       
+
+    }
+    100%{
+        margin-top: 0%;
+    }
+
+}
+#text{
+    width: 55%;
+}
+
+#bus{
+    margin-left: -1700px;
+    animation-name: bus1;
+   
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-duration: 15s;
+    
+}
+@keyframes bus1 {
+    0%{
+        margin-left:-1750px ;
+    }
+    100%{
+        margin-left: 1750px;
+       
+
+    }
+   
+
+}
+#msg{
+    margin-right: -1350px;
+    margin-bottom: -500px;
+    position: fixed;
+    animation-name: msg;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-duration: 0.5s;
+}
+@keyframes msg {
+    0%{
+        transform: rotate(0deg);
+        transform: scale(1.01);
+    }
+    100%{
+        transform: rotate(-4deg);
+       
+
+    }
+   
+
+}
